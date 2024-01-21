@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- LOAD CSS FILES -->
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -312,14 +313,14 @@
                                     <div class="overlay">
                                         <span class="time">razor talent consulting</span>
                                         <a href="#">
-                                            <h3>Personal Effectiveness Training</h3>
+                                            <h3>Training Of Trainers(TOT)</h3>
                                         </a>
                                         <span class="desc">
                                             <ul class="desc">
-                                                <li>Time Management</li>
-                                                <li>Effective Communication & Business Etiquette</li>
-                                                <li>Personal Branding & Image</li>
-                                                <li>Emotional Intelligence</li>
+                                                <li>How to create a training program</li>
+                                                <li>Creating learning objectives</li>
+                                                <li>Content Development process</li>
+                                                <li>Adult learning principles</li>
                                             </ul>
                                         </span>
                                     </div>
@@ -334,14 +335,35 @@
                                         </a>
                                         <span class="desc">
                                             <ul class="desc">
-                                                <li>Debt Management</li>
-                                                <li>Budgeting</li>
-                                                <li>Saving</li>
-                                                <li>Investment</li>
+                                                <li>Psychology of Money</li>
+                                                <li>Sources of Income</li>
+                                                <li>Common financial challenges</li>
+                                                <li>Solutions to financial problems</li>
                                             </ul>
                                         </span>
                                     </div>
                                     <img src="img/tr2.jpg" alt="">
+                                </div>
+
+                                <div class="item">
+                                    <div class="overlay">
+                                        <span class="time">razor talent consulting</span>
+                                        <a href="#">
+                                            <h3>Leadership Skills Training</h3>
+                                        </a>
+                                        <span class="desc">
+                                            <ul class="desc">
+                                                <li>Define leadership</li>
+                                                <li>Leadership process</li>
+                                                <li>Leadership vs Management</li>
+                                                <li>Leadership styles</li>
+                                                <!-- <li>Levels of leadership</li>
+                                                <li>Examples of poor leadership</li>
+                                                <li>Effects of poor leadership in an organization</li> -->
+                                            </ul>
+                                        </span>
+                                    </div>
+                                    <img src="img/tr3.jpg" alt="">
                                 </div>
 
                                 <div class="item">
@@ -429,6 +451,50 @@
                 </div>
                 <div class="clearfix"></div>
             </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center wow fadeInUp">
+                            <h2>Our Patners</h2>
+                            <div class="divider-double"></div>
+                        </div>
+
+                        <div class="col-md-12 wow fadeInUp" data-wow-delay=".25s">
+                            
+                                <div class="swiper-container">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="img/r1.png" alt="Partner 1"></div>
+                                        <div class="swiper-slide"><img src="img/r2.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r3.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r4.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r5.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r6.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r7.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r8.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r9.png" alt="Partner 2"></div>
+                                        <div class="swiper-slide"><img src="img/r10.png" alt="Partner 2"></div>
+                                        <!-- Add more slides for each partner -->
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+                                    <!-- If we need navigation buttons -->
+                                    <!-- <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div> -->
+                                </div>
+
+                                
+
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            
 
             <section id="latest-sermons">
                 <div class="container">
@@ -566,6 +632,26 @@
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <script src="js/rev-setting-1.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+            delay: 3000, // Adjust the delay in milliseconds (e.g., 3000 for 3 seconds)
+            disableOnInteraction: false,
+        },
+        });
+    </script>
 
 </body>
 </html>

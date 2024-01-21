@@ -325,6 +325,19 @@ jQuery(document).ready(function() {
         touchenabled: "on",
         navigationType: "none",
     });
+
+    var smallrevapi;
+    smallrevapi = jQuery('#small-revolution-slider').revolution({
+        delay: 5000,
+        startwidth: 1170,
+        startheight: 200,
+        hideThumbs: 10,
+        fullWidth: "off",
+        fullScreen: "off",
+        fullScreenOffsetContainer: "",
+        touchenabled: "on",
+        navigationType: "none",
+    });
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
     // prettyPhoto function
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 	
